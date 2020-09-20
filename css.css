@@ -1,10 +1,15 @@
+.calculatorArea{
+    position: fixed; /* or absolute */
+    top: 15%;
+    left: 42%;
+    text-align: center;
+}
 .tipArea{
     background-color: white;
 }
 #totalArea{
     background-color:#F9F0FE;
     color: #9D06E8;
-    width: 30%;
     height: 5rem;
 }
 #calculateButton{
@@ -15,12 +20,6 @@
 }
 #bill{
     margin-bottom: 1rem;
-}
-.calculatorArea{
-    position: fixed; /* or absolute */
-    top: 15%;
-    left: 42%;
-    text-align: center;
 }
 .roundButton{
     border-radius: 50%;
