@@ -1,2 +1,2 @@
-# Quiz
-This is a quiz project
+# Tip calculator
+This is a tip calculator project
