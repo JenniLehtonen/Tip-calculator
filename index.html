@@ -13,8 +13,8 @@
     <form>
       <label for="bill">Bill:</label><br>
       <input type="number" id="bill" name="bill"><br>
-      <label for="tip">Tip:</label><br>
-      <button class="roundButton">-</button><span id="tip" name="tip"></span><button class="roundButton">+</button><br>
+      <label>Tip:</label><br>
+      <button class="roundButton" id="minusButton">-</button><span id="tip"></span><button class="roundButton" id="plusButton">+</button><br>
       <label for="people">Number of people:</label><br>
       <input type="number" id="people" name="people"><br><br>
       <button type="button" id="calculateButton" onclick="calculateTip(bill.value, tip.value, people.value)">Calculate</button>
@@ -25,6 +25,8 @@
   </div>
 </div>
 <script>
+  var tipProcent = 15;
+  document.getElementById("minusButton").addEventListener("click", displayDate);
   function calculateTip(bill, tip, people){
     var calculatedTip = bill/100*tip;
     var tipDivided = calculatedTip/people;
