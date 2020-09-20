@@ -8,22 +8,24 @@
 </head>
 <body>
   <h1>Tip calculator</h1>
-  <div>
+  <div class="totalArea">
       <p>Total per person</p>
   </div>
   <div class="tipArea">
     <form>
       <label for="bill">Bill:</label><br>
-      <input type="number" name="bill"><br>
+      <input type="number" id="bill" name="bill"><br>
       <label for="tip">Tip:</label><br>
-      <input type="number" name="tip"><br>
+      <input type="number" id="tip" name="tip"><br>
       <label for="people">Number of people:</label><br>
-      <input type="number" name="people"><br><br>
-      <button type="button">Calculate</button>
+      <input type="number" id="people" name="people"><br><br>
+      <button type="button" onclick="calculateTip(bill.value, tip.value, people.value)">Calculate</button>
     </form>
   </div>
 <script>
-
+  function calculateTip(bill, tip, people){
+    
+  }
 </script>
 </body>
 </html>
