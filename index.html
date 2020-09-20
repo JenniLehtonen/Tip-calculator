@@ -17,7 +17,7 @@
       <button type="button" class="roundButton" onclick="tipMinus()">-</button><span id="tip">0</span><button type="button" class="roundButton" onclick="tipPlus()">+</button><br>
       <label for="people">Number of people:</label><br>
       <input type="number" id="people" name="people"><br><br>
-      <button type="button" id="calculateButton" onclick="calculateTip(bill.value, tip.value, people.value)">Calculate</button>
+      <button type="button" id="calculateButton" onclick="calculateTip(bill.value, people.value)">Calculate</button>
     </form>
   </div>
   <div id="totalArea">
@@ -26,20 +26,18 @@
 </div>
 <script>
   var tipProcent = 0;
-  function calculateTip(bill, tip, people){
-    var calculatedTip = bill/100*tip;
-    var tipDivided = calculatedTip/people;
-    document.getElementById('totalArea').innerHTML = "<p>Tip per person is</p>"+tipDivided;
-  }
   function tipMinus(){
-    console.log("täällä on käyty");
     tipProcent--;
     document.getElementById("tip").innerHTML=tipProcent;
   }
   function tipPlus(){
-    console.log("täällä on käyty");
     tipProcent++;
     document.getElementById("tip").innerHTML=tipProcent;
+  }
+  function calculateTip(bill, people){
+    var calculatedTip = bill/100*tipProcent;
+    var tipDivided = calculatedTip/people;
+    document.getElementById('totalArea').innerHTML = "<p>Tip per person is</p>"+tipDivided;
   }
 </script>
 </body>
