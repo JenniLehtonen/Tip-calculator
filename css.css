@@ -11,6 +11,8 @@
     background-color:#F9F0FE;
     color: #9D06E8;
     height: 5rem;
+    border-radius: 8px;
+    padding: 0.5rem;
 }
 #calculateButton{
     margin-bottom: 2rem;
