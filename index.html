@@ -6,26 +6,33 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css.css">
 </head>
-<body>
+<body onload="tip()">
+  <div class="calculatorArea">
   <h1>Tip calculator</h1>
-  <div class="totalArea">
-      <p>Total per person</p>
-  </div>
   <div class="tipArea">
     <form>
       <label for="bill">Bill:</label><br>
       <input type="number" id="bill" name="bill"><br>
       <label for="tip">Tip:</label><br>
-      <input type="number" id="tip" name="tip"><br>
+      <button class="roundButton">-</button><span id="tip" name="tip"></span><button class="roundButton">+</button><br>
       <label for="people">Number of people:</label><br>
       <input type="number" id="people" name="people"><br><br>
-      <button type="button" onclick="calculateTip(bill.value, tip.value, people.value)">Calculate</button>
+      <button type="button" id="calculateButton" onclick="calculateTip(bill.value, tip.value, people.value)">Calculate</button>
     </form>
   </div>
+  <div id="totalArea">
+    <p>Tip per person is</p>
+  </div>
+</div>
 <script>
   function calculateTip(bill, tip, people){
     var calculatedTip = bill/100*tip;
     var tipDivided = calculatedTip/people;
+    document.getElementById('totalArea').innerHTML = "<p>Tip per person is</p>"+tipDivided;
+  }
+  function tip(){
+    var tipBeginning = 0;
+    document.getElementById('tip').innerHTML = tipBeginning;
   }
 </script>
 </body>
