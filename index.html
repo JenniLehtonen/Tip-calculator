@@ -15,8 +15,15 @@
       <input type="number" id="bill" name="bill"><br>
       <label>Tip:</label><br>
       <button type="button" class="roundButton" onclick="tipMinus()">-</button><span id="tip">15 %</span><button type="button" class="roundButton" onclick="tipPlus()">+</button><br>
-      <label for="people">Number of people:</label><br>
-      <input type="number" id="people" name="people"><br><br>
+      
+      <!--<label for="people">Number of people:</label><br>
+      <input type="number" id="people" name="people"><br><br>-->
+      <p>Number of people</p>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="0" class="slider" id="people">
+        <p>Value: <span id="demo"></span></p>
+      </div>
+
       <button type="button" id="calculateButton" onclick="calculateTip(bill.value, people.value)">Calculate</button>
     </form>
   </div>
@@ -34,12 +41,21 @@
     tipProcent++;
     document.getElementById("tip").innerHTML=tipProcent + " %";
   }
-  function calculateTip(bill, people){  //calculate the amount of the tip
+  function calculateTip(bill, people){  //calculate the amount of the tip and show it
     var calculatedTip = bill/100*tipProcent;
     var tip = calculatedTip/people;
     var fixedTip = tip.toFixed(2);
     document.getElementById('totalArea').innerHTML = "<p>Tip per person is <br>" + fixedTip + "€</p>";
   }
+
+  var slider = document.getElementById("people"); //range slider
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value;
+
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+    
 </script>
 </body>
 </html>

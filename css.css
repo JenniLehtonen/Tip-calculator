@@ -1,8 +1,10 @@
 .calculatorArea{
-    position: fixed; /* or absolute */
+    position: fixed;
     top: 15%;
     left: 42%;
     text-align: center;
+    padding: 2rem;
+    border: 2px solid black;
 }
 .tipArea{
     background-color: white;
@@ -13,6 +15,7 @@
     height: 5rem;
     border-radius: 8px;
     padding: 0.5rem;
+    border: 2px solid black;
 }
 #calculateButton{
     margin-bottom: 2rem;
