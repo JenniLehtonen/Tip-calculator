@@ -36,8 +36,9 @@
   }
   function calculateTip(bill, people){  //calculate the amount of the tip
     var calculatedTip = bill/100*tipProcent;
-    var tipDivided = calculatedTip/people;
-    document.getElementById('totalArea').innerHTML = "<p>Tip per person is</p>"+tipDivided;
+    var tip = calculatedTip/people;
+    var fixedTip = tip.toFixed(2);
+    document.getElementById('totalArea').innerHTML = "<p>Tip per person is <br>" + fixedTip + "€</p>";
   }
 </script>
 </body>
