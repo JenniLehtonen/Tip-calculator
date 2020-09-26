@@ -14,7 +14,7 @@
       <label for="bill">Bill:</label><br>
       <input type="number" id="bill" name="bill"><br>
       <label>Tip:</label><br>
-      <button type="button" class="roundButton" onclick="tipMinus()">-</button><span id="tip">15</span><button type="button" class="roundButton" onclick="tipPlus()">+</button><br>
+      <button type="button" class="roundButton" onclick="tipMinus()">-</button><span id="tip">15 %</span><button type="button" class="roundButton" onclick="tipPlus()">+</button><br>
       <label for="people">Number of people:</label><br>
       <input type="number" id="people" name="people"><br><br>
       <button type="button" id="calculateButton" onclick="calculateTip(bill.value, people.value)">Calculate</button>
@@ -28,11 +28,11 @@
   var tipProcent = 15;
   function tipMinus(){
     tipProcent--;
-    document.getElementById("tip").innerHTML=tipProcent;
+    document.getElementById("tip").innerHTML=tipProcent + " %";
   }
   function tipPlus(){
     tipProcent++;
-    document.getElementById("tip").innerHTML=tipProcent;
+    document.getElementById("tip").innerHTML=tipProcent + " %";
   }
   function calculateTip(bill, people){  //calculate the amount of the tip
     var calculatedTip = bill/100*tipProcent;
