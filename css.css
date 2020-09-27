@@ -18,6 +18,7 @@ body{
 }
 label{
   color: black;
+  margin-bottom: 0.5rem;
 }
 #totalArea{
     background-color: white;
