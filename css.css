@@ -1,3 +1,6 @@
+body{
+  font-family: 'Roboto', sans-serif, Arial;
+}
 .calculatorArea{
     background-image: linear-gradient(rgb(255,206,175),rgb(255,142,150));
     position: fixed;
@@ -9,9 +12,10 @@
 .tipArea{
     border-radius: 15px;
     color: black;
+    background-color: white;
 }
 label{
-  color:white;
+  color: black;
 }
 #totalArea{
     background-color: white;
@@ -21,8 +25,19 @@ label{
     margin-bottom: 1rem;
     text-align: center;
     box-shadow: 1px 1px 2px 1px #EBBDAF;
-    color: rgb(124, 124, 124);
+    color: #FF8291;
     font-weight: 540;
+}
+::-webkit-input-placeholder { /* Edge */
+  color: white;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color:white;
+}
+
+::placeholder {
+  color:white;
 }
 #calculateButton{
     margin-bottom: 1rem;
@@ -42,14 +57,15 @@ label{
     font-weight: 550;
 }
 input[type=number] {
+    text-align: start;
     background-color: transparent;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     border: none;
-    border-bottom: 2px solid rgb(255, 255, 255);
-    color: white;
+    border-bottom: 2px solid rgb(190, 190, 190);
+    color: black;
     font-weight: 540;
 }
 .slidecontainer {

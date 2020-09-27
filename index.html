@@ -5,22 +5,19 @@
   <meta http-equiv='X-UA-Compatible' content='IE-edge'>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!--Google font-->
 </head>
 <body>
   <div class="calculatorArea">
     <div id="totalArea">
-      <p id="totalTip">0.00 €</p>
-      <p>TIP PER PERSON</p>
+      <p id="totalTip" style="font-size:1.2rem;">0.00 €</p>
+      <p style="font-size:0.8rem;">TIP PER PERSON</p>
     </div>
   <div class="tipArea">
     <form>
-      <label for="bill">Enter bill total:</label><br>
-      <input type="number" id="bill" name="bill"><br>
+      <input type="number" id="bill" name="bill" placeholder="Enter bill total"><br>
       <label>Tip:</label><br>
       <button type="button" class="roundButton" onclick="tipMinus()">-</button><span id="tip">15 %</span><button type="button" class="roundButton" onclick="tipPlus()">+</button><br>
-      
-      <!--<label for="people">Number of people:</label><br>
-      <input type="number" id="people" name="people"><br><br>-->
       <p>Number of people</p>
       <div class="slidecontainer">
         <input type="range" min="1" max="20" value="0" class="slider" id="people">
