@@ -8,7 +8,10 @@
 </head>
 <body>
   <div class="calculatorArea">
-  <h1>Tip calculator</h1>
+    <div id="totalArea">
+      <p id="totalTip">0.00 €</p>
+      <p>Tip per person</p>
+    </div>
   <div class="tipArea">
     <form>
       <label for="bill">Bill:</label><br>
@@ -26,10 +29,6 @@
 
       <button type="button" id="calculateButton" onclick="calculateTip(bill.value, people.value)">Calculate</button>
     </form>
-  </div>
-  <div id="totalArea">
-    <p id="totalTip">0.00 €</p>
-    <p>Tip per person is</p>
   </div>
 </div>
 <script>

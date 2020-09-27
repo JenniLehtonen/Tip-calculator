@@ -2,7 +2,6 @@
     position: fixed;
     top: 15%;
     left: 42%;
-    text-align: center;
     padding: 2rem;
     border: 2px solid black;
 }
@@ -15,10 +14,11 @@
     height: 5rem;
     border-radius: 8px;
     padding: 0.5rem;
-    border: 2px solid black;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 #calculateButton{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 #tip{
     margin: 0.5rem;
@@ -27,5 +27,54 @@
     margin-bottom: 1rem;
 }
 .roundButton{
-    border-radius: 50%;
+    border-radius: 15%;
+    background-color:#F9F0FE;
+    color: #9D06E8;
+    border: 0.5px solid #9D06E8;
+    outline-color: #670697;
 }
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+}
+.slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
