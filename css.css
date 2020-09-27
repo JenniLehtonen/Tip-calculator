@@ -1,16 +1,21 @@
 .calculatorArea{
+    background-image: linear-gradient(rgb(255,206,175),rgb(255,142,150));
     position: fixed;
     top: 15%;
     left: 42%;
     padding: 2rem;
     border: 2px solid black;
+    border-radius: 15px;
 }
 .tipArea{
-    background-color: white;
+    border-radius: 15px;
+    color: black;
+}
+label{
+  color:white;
 }
 #totalArea{
-    background-color:#F9F0FE;
-    color: #9D06E8;
+    background-color: white;
     height: 5rem;
     border-radius: 8px;
     padding: 0.5rem;
@@ -34,6 +39,7 @@
     outline-color: #670697;
 }
 input[type=number] {
+    background-color: transparent;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
