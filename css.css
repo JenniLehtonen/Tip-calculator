@@ -31,15 +31,15 @@ label{
     font-weight: 540;
 }
 ::-webkit-input-placeholder { /* Edge */
-  color: white;
+  color: black;
 }
 
 :-ms-input-placeholder { /* Internet Explorer */
-  color:white;
+  color:black;
 }
 
 ::placeholder {
-  color:white;
+  color:black;
 }
 #calculateButton{
     margin-bottom: 1rem;
@@ -61,7 +61,7 @@ label{
 input[type=number] {
     text-align: start;
     background-color: transparent;
-    width: 80%;
+    width: 75%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
