@@ -12,13 +12,9 @@ body{
 .tipArea{
     border-radius: 8px;
     text-align: center;
-    color: black;
+    color: #FF8291;
     background-color: white;
     box-shadow: 1px 1px 2px 1px #EBBDAF;
-}
-label{
-  color: black;
-  margin-bottom: 0.5rem;
 }
 #totalArea{
     background-color: white;
@@ -32,15 +28,15 @@ label{
     font-weight: 540;
 }
 ::-webkit-input-placeholder { /* Edge */
-  color: black;
+  color: #FF8291;
 }
 
 :-ms-input-placeholder { /* Internet Explorer */
-  color:black;
+  color: #FF8291;
 }
 
 ::placeholder {
-  color:black;
+  color:#FF8291;
 }
 #calculateButton{
     margin-bottom: 1rem;
@@ -51,7 +47,8 @@ label{
 #bill{
     margin-bottom: 1rem;
 }
-.roundButton{
+.plusMinusButtons{
+    margin-top: 0.5rem;
     border-radius: 15%;
     background-color:white;
     color: #FF8E96;
