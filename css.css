@@ -40,6 +40,13 @@ body{
 }
 #calculateButton{
     margin-bottom: 1rem;
+    border-radius: 15px;
+    padding: 0.5rem;
+    background-color: white;
+    outline: none;
+}
+#calculateButton:focus{
+  border: 2px solid black;
 }
 #tip{
     margin: 0.5rem;
@@ -65,7 +72,7 @@ input[type=number] {
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid rgb(190, 190, 190);
-    color: black;
+    color: #FF8E96;
     font-weight: 540;
     outline-color: rgb(190, 190, 190);
 }
