@@ -59,7 +59,6 @@ label{
     font-weight: 550;
 }
 input[type=number] {
-    text-align: start;
     background-color: transparent;
     width: 75%;
     padding: 12px 20px;
@@ -69,12 +68,13 @@ input[type=number] {
     border-bottom: 2px solid rgb(190, 190, 190);
     color: black;
     font-weight: 540;
+    outline-color: rgb(190, 190, 190);
+    text-align: center;
 }
 .slidecontainer {
     width: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    align-content: center;
+    padding-left: 25px;
   }
   
   .slider {
