@@ -59,6 +59,7 @@ label{
     font-weight: 550;
 }
 input[type=number] {
+    text-align: center;
     background-color: transparent;
     width: 75%;
     padding: 12px 20px;
@@ -69,7 +70,6 @@ input[type=number] {
     color: black;
     font-weight: 540;
     outline-color: rgb(190, 190, 190);
-    text-align: center;
 }
 .slidecontainer {
     width: 75%;
