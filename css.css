@@ -5,7 +5,7 @@ body{
     background-image: linear-gradient(rgb(255,206,175),rgb(255,142,150));
     position: fixed;
     top: 15%;
-    left: 42%;
+    left: 40%;
     padding: 2rem;
     border-radius: 15px;
 }
@@ -54,15 +54,14 @@ label{
     border-radius: 15%;
     background-color:white;
     color: #FF8E96;
-    border: 0.5px solid #9D06E8;
-    outline-color: #670697;
+    border: 0.5px solid rgb(163, 163, 163);
+    outline-color: rgb(131, 131, 131);
     font-weight: 550;
 }
 input[type=number] {
-    width: 80%;
     text-align: start;
     background-color: transparent;
-    width: 100%;
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -73,6 +72,7 @@ input[type=number] {
 }
 .slidecontainer {
     width: 75%;
+    align-content: center;
   }
   
   .slider {
