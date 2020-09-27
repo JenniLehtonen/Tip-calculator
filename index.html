@@ -28,6 +28,7 @@
     </form>
   </div>
   <div id="totalArea">
+    <p id="totalTip">0.00 €</p>
     <p>Tip per person is</p>
   </div>
 </div>
@@ -45,7 +46,7 @@
     var calculatedTip = bill/100*tipProcent;
     var tip = calculatedTip/people;
     var fixedTip = tip.toFixed(2);
-    document.getElementById('totalArea').innerHTML = "<p>Tip per person is <br>" + fixedTip + "€</p>";
+    document.getElementById('totalTip').innerHTML = fixedTip + " €";
   }
 
   var slider = document.getElementById("people"); //range slider
