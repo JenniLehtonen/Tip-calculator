@@ -18,10 +18,9 @@
       <input type="number" id="bill" name="bill" placeholder="Enter bill total"><br>
       <label>Tip:</label><br>
       <button type="button" class="plusMinusButtons" onclick="tipMinus()">-</button><span id="tip">15 %</span><button type="button" class="plusMinusButtons" onclick="tipPlus()">+</button><br>
-      <p>Number of people</p>
+      <p>Split: <span id="split"></span></p>
       <div class="slidecontainer">
         <input type="range" min="1" max="20" value="0" class="slider" id="people">
-        <p>Value: <span id="demo"></span></p>
       </div>
 
       <button type="button" id="calculateButton" onclick="calculateTip(bill.value, people.value)">Calculate</button>
@@ -46,7 +45,7 @@
   }
 
   var slider = document.getElementById("people"); //range slider
-  var output = document.getElementById("demo");
+  var output = document.getElementById("split");
   output.innerHTML = slider.value;
 
   slider.oninput = function() {

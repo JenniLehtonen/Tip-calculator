@@ -82,6 +82,7 @@ input[type=number] {
     width: 75%;
     align-content: center;
     padding-left: 25px;
+    margin-bottom: 0.8rem;
   }
   .slider {
     -webkit-appearance: none;
