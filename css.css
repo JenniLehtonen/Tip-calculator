@@ -18,7 +18,8 @@ body{
 }
 #totalArea{
     background-color: white;
-    height: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border-radius: 8px;
     margin-bottom: 1rem;
     text-align: center;
@@ -42,7 +43,9 @@ body{
     border-radius: 15px;
     padding: 0.5rem;
     background-color: white;
-    outline: none;
+    outline:none;
+    border: 0.5px solid rgb(163, 163, 163);
+    
 }
 #calculateButton:hover{
   background-color: #FFCEAF;
