@@ -48,7 +48,7 @@ body{
     
 }
 #calculateButton:hover{
-  background-color: #FFCEAF;
+  background-color: #ffceafa6;
 }
 #calculateButton:focus{
   border: 2px solid black;
@@ -67,6 +67,10 @@ body{
     border: 0.5px solid rgb(163, 163, 163);
     outline-color: rgb(131, 131, 131);
     font-weight: 550;
+    width: 1.3rem;
+}
+.plusMinusButtons:hover{
+  background-color: #ffceaf63;
 }
 input[type=number] {
     text-align: center;
