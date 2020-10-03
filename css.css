@@ -68,6 +68,7 @@ body{
     outline-color: rgb(131, 131, 131);
     font-weight: 550;
     width: 1.3rem;
+    height: 1.3rem;
 }
 .plusMinusButtons:hover{
   background-color: #ffceaf63;
@@ -149,4 +150,15 @@ input[type=number] {
       box-shadow: 1px 1px 2px 1px #EBBDAF;
       width: 90%;
   }
+  .plusMinusButtons{
+    margin-top: 0.5rem;
+    border-radius: 15%;
+    background-color:white;
+    color: #FF8E96;
+    border: 0.5px solid rgb(163, 163, 163);
+    outline-color: rgb(131, 131, 131);
+    font-weight: 550;
+    width: 2rem;
+    height: 2rem;
+}
 }
