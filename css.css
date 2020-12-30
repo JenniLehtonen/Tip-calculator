@@ -1,11 +1,16 @@
 body{
-  font-family: 'Roboto', sans-serif, Arial;
+    font-family: 'Roboto', sans-serif, Arial;
+}
+form{
+    padding-top: 1rem;
 }
 .calculatorArea{
     background-image: linear-gradient(rgb(255,206,175),rgb(255,142,150));
-    position: fixed;
-    top: 15%;
-    left: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:30%;
     padding: 2rem;
     border-radius: 15px;
 }
@@ -28,15 +33,15 @@ body{
     font-weight: 540;
 }
 ::-webkit-input-placeholder { /* Edge */
-  color: #FF8291;
+    color: #FF8291;
 }
 
 :-ms-input-placeholder { /* Internet Explorer */
-  color: #FF8291;
+    color: #FF8291;
 }
 
 ::placeholder {
-  color:#FF8291;
+    color:#FF8291;
 }
 #calculateButton{
     margin-top: 0.5rem;
@@ -46,12 +51,13 @@ body{
     background-color: white;
     outline:none;
     border: 0.5px solid rgb(163, 163, 163);
+    cursor: pointer;
 }
 #calculateButton:hover{
-  background-color: #ffceafa6;
+    background-color: #ffceafa6;
 }
 #calculateButton:focus{
-  border: 2px solid black;
+    border: 2px solid black;
 }
 #tip{
     margin: 0.5rem;
@@ -69,9 +75,10 @@ body{
     font-weight: 550;
     width: 1.3rem;
     height: 1.3rem;
+    cursor: pointer;
 }
 .plusMinusButtons:hover{
-  background-color: #ffceaf63;
+    background-color: #ffceaf63;
 }
 input[type=number] {
     text-align: center;
@@ -86,54 +93,24 @@ input[type=number] {
     font-weight: 540;
     outline-color: rgb(190, 190, 190);
 }
-.slidecontainer {
-    width: 75%;
-    align-content: center;
-    padding-left: 25px;
-    margin-bottom: 0.8rem;
-  }
-  .slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 15px;
-    border-radius: 5px;
-    background: white;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-  .slider:hover {
-    opacity: 1;
-  }
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: white;
-    cursor: pointer;
-  }
-  .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background:white;
-    cursor: pointer;
-  }
+
 
   @media only screen and (max-width: 600px) {
     .calculatorArea{
-      position: fixed;
-      top: 15%;
+      position: absolute;
+      top: 0%;
       left: 0%;
-      padding: 20px;
+      transform: none;
+      height:100%;
       width: 100%;
-      height: 60%;
       border-radius: 0px;
+      padding: 0rem;
     }
     .tipArea{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom:1rem;
       border-radius: 4px;
       text-align: center;
       background-color: white;
@@ -141,7 +118,10 @@ input[type=number] {
       width: 90%;
   }
     #totalArea{
-      background-color: white;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top:1rem;
       height: 5rem;
       padding-bottom: 2rem;
       border-radius: 4px;
@@ -149,20 +129,21 @@ input[type=number] {
       text-align: center;
       box-shadow: 1px 1px 2px 1px #EBBDAF;
       width: 90%;
+      background-color: white;
   }
   .plusMinusButtons{
-    border: 0.8px solid rgb(163, 163, 163);
-    width: 2rem;
-    height: 2rem;
+      border: 0.8px solid rgb(163, 163, 163);
+      width: 2rem;
+      height: 2rem;
  }
   #tip{
-    font-size: 1.2rem;
+      font-size: 1.2rem;
   }
   #calculateButton{
-    border-radius: 15px;
-    padding: 0.8rem;
-    background-color: white;
-    outline:none;
-    border: 0.5px solid rgb(163, 163, 163);
+      border-radius: 15px;
+      padding: 0.8rem;
+      background-color: white;
+      outline:none;
+      border: 0.5px solid rgb(163, 163, 163);
  }
 }
