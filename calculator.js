@@ -13,12 +13,4 @@ var tipProcent = 15;
     var fixedTip = tip.toFixed(2);
     document.getElementById('totalTip').innerHTML = fixedTip + " €";
   }
-
-  var slider = document.getElementById("people"); //range slider
-  var output = document.getElementById("split");
-  output.innerHTML = slider.value;
-
-  slider.oninput = function() {
-    output.innerHTML = this.value;
-  }
     
