@@ -16,11 +16,11 @@
   <div class="tipArea">
     <form>
       <label for="bill">Bill total:</label><br>
-      <input type="number" id="bill" name="bill" placeholder="Enter bill total"><br>
+      <input type="number" id="bill" name="bill" min="0" placeholder="Enter bill total"><br>
       <label>Tip:</label><br>
       <button type="button" class="plusMinusButtons" onclick="tipMinus()">-</button><span id="tip">15 %</span><button type="button" class="plusMinusButtons" onclick="tipPlus()">+</button><br>
       <label for="people">Number of people:</label><br>
-      <input type="number" id="people" placeholder="Enter the number of people"><br>
+      <input type="number" id="people" min="1" placeholder="Enter the number of people"><br>
       <button type="button" id="calculateButton" onclick="calculateTip(bill.value, people.value)">Calculate</button>
     </form>
   </div>

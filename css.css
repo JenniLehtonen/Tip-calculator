@@ -70,7 +70,7 @@ form{
     margin-bottom: 1rem;
     border-radius: 15%;
     background-color:white;
-    color: #FF8E96;
+    color:#948F8F;
     border: 0.5px solid rgb(163, 163, 163);
     outline-color: rgb(131, 131, 131);
     font-weight: 550;
@@ -89,14 +89,14 @@ input[type=number] {
     margin: 8px 0;
     box-sizing: border-box;
     border: none;
-    border-bottom: 2px solid rgb(190, 190, 190);
+    border-bottom: 2px solid#948F8F;
     color: #FF8E96;
     font-weight: 540;
-    outline-color: rgb(190, 190, 190);
+    outline-color: #948F8F;
 }
 
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     .calculatorArea{
       position: absolute;
       top: 0%;
@@ -145,6 +145,6 @@ input[type=number] {
       padding: 0.8rem;
       background-color: white;
       outline:none;
-      border: 0.5px solid rgb(163, 163, 163);
+      border: 0.5px solid#948F8F;
  }
 }
