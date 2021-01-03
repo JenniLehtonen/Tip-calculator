@@ -17,10 +17,11 @@ form{
 .tipArea{
     border-radius: 8px;
     text-align: center;
-    color: #FF8291;
+    color:black;
     background-color: white;
     box-shadow: 1px 1px 2px 1px #EBBDAF;
 }
+
 #totalArea{
     background-color: white;
     padding-top: 0.5rem;
@@ -29,19 +30,19 @@ form{
     margin-bottom: 1rem;
     text-align: center;
     box-shadow: 1px 1px 2px 1px #EBBDAF;
-    color: #FF8291;
+    color: #ff6779;
     font-weight: 540;
 }
 ::-webkit-input-placeholder { /* Edge */
-    color: #FF8291;
+    color:black;
 }
 
 :-ms-input-placeholder { /* Internet Explorer */
-    color: #FF8291;
+    color: black;
 }
 
 ::placeholder {
-    color:#FF8291;
+    color:black;
 }
 #calculateButton{
     margin-top: 0.5rem;
@@ -70,13 +71,14 @@ form{
     margin-bottom: 1rem;
     border-radius: 15%;
     background-color:white;
-    color:#948F8F;
+    color:#4d4c4c;
     border: 0.5px solid rgb(163, 163, 163);
     outline-color: rgb(131, 131, 131);
     font-weight: 550;
     width: 1.3rem;
     height: 1.3rem;
     cursor: pointer;
+    font-size: 0.9rem;
 }
 .plusMinusButtons:hover{
     background-color: #ffceaf63;
@@ -90,7 +92,7 @@ input[type=number] {
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid#948F8F;
-    color: #FF8E96;
+    color:black;
     font-weight: 540;
     outline-color: #948F8F;
 }
